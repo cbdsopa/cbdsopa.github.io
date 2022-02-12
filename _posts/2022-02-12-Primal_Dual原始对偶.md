@@ -8,7 +8,7 @@ tags: [网络流,费用流]
 
 不是费用流都需要用 SPFA 吗。
 
-众所周知，SPFA 去世了，然后网络流显然有负边。于是我们可以像 Johnson 全源最短路一样，给边加上势能，具体实现看我之前的 [博客](https://www.luogu.com.cn/blog/132530/post-mu-ban-johnson-quan-yuan-zui-duan-lu) 啦。
+众所周知，SPFA 去世了，然后网络流显然有负边。于是我们可以像 Johnson 全源最短路一样，给边加上势能，具体实现看我之前的 [博客](https://cbdsopa.github.io/%E5%9B%BE%E8%AE%BA/2022/02/12/Johnson%E5%85%A8%E6%BA%90%E6%9C%80%E7%9F%AD%E8%B7%AF.html) 啦。
 
 然后对于每一次跑 Dijkstra ，然后得到最短路，把势能要再加上这个最短路，可以证明这样操作一次图上不会再有负边。
 
