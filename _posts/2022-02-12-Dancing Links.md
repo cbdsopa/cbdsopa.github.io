@@ -3,7 +3,7 @@ layout: post
 title: Dancing Links
 subtitle: 覆盖问题解决利器
 categories: 图论
-tags: [搜索,链表]
+tags: [搜索,链表,Dancing Links]
 ---
 
 冬令营突然发现的一个比较厉害的东西。
@@ -202,17 +202,7 @@ struct DLX{
 		int line=(x.x-1)*81+(x.y-1)*9+x.num;
 		ins(line,(x.x-1)*9+x.num);ins(line,81+(x.y-1)*9+x.num);
 		ins(line,162+(x.g-1)*9+x.num);ins(line,243+(x.x-1)*9+x.y);
-	}/*
-	inline void dead_saying(int i){
-		int x,y,z;
-		x=((int)(p[i].x-1) )/81+1;
-		y=((int)(p[i].x-1) )/9%9+1;
-		z=((int)(p[i].x-1) )%9+1;
-		int line=(x-1)*81+(y-1)*9+z;
-		if(i<=m) printf("std ");
-		printf("dead %d:(%d,%d) [%d][%d,%d]{%d}\n",i,x,y,z,p[i].x,p[i].y,line);
 	}
-	*/
 	inline void remove(int c){
 		p[p[c].r].l=p[c].l;p[p[c].l].r=p[c].r;
 		//dead_saying(c);
