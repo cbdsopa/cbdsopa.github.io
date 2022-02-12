@@ -3,7 +3,7 @@ layout: post
 title: Dancing Links
 subtitle: 覆盖问题解决利器
 categories: 图论
-tags: [搜索,链表,Dancing Links]
+tags: [搜索,链表]
 ---
 
 冬令营突然发现的一个比较厉害的东西。
